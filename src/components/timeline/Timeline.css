@@ -1,0 +1,35 @@
+.timeline {
+  flex: 0.45;
+  border-right: 1px solid var(--twitter-background);
+  overflow-y: scroll;
+}
+
+/* スクロールバー非表示対応 */
+/* Chrome・Safari・Microsoft Edge */
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+/* Firefox */
+.timeline {
+  scrollbar-width: none;
+}
+/* IE */
+.timeline {
+  -ms-overflow-style: none;
+}
+/* 　　 */
+
+.timeline_header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 5px 20px;
+}
+
+.timelineheader > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
